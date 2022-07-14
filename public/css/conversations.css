@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri', sans-serif;
+}
+.chatWindow{
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+}
+/* -------------------NAVBAR-------------------------------------- */
+.navbar{
+    width: 5%;
+    background: #004d95;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+}
+.icons .font{
+    font-size: x-large;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.icons i:hover{
+    background: #002f5c;
+}
+.iconSelected{
+    background: white;
+    color: #004d95 !important;
+}
+.profilePicturebottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.profilePicturebottom img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.outerOnline{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    z-index: 1;
+    bottom: 30px;
+    left: 40px;
+    background: maroon;
+    border-radius: 50%;
+}
+
+/* ------------------------------------------DM---------------------------------------- */
+.DM{
+    width: 20%;
+    box-shadow: 0 -2px 5px #ccc;
+}
+.DMtitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    background: #fff;
+    padding: 10px 0;
+}
+.DMtitle i{
+    margin-left: 10px;
+    /* margin-right: 30px; */
+    font-size: large;
+}
+.DMtitle h2{
+    font-weight: bold;
+    margin-left: -75px;
+}
+.DMtitle img{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+.message{
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+.messageTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.messageTitle i{
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid rgb(130, 130, 130);
+    box-shadow: 1px -1px 1px #ccc;
+}
+.messageTitle > .userNameTitle{
+    margin-left: -115px;
+}
+.messageTitle > .messageTime{
+    margin-right: 10px;
+}
+.messageContent{
+    margin-left: 10px;
+}
+/* ---------------------------------------CHAT------------------------------------------ */
+.chat{
+    width: 50%;
+    background: #f6f6f7;
+    opacity: 0;
+}
+
+.chatTitle h1{
+    margin-left: 10px;
+}
+.chatMsgWindow{
+    margin-top: 20px;
+}
+.fullMsgFriend, .fullMsgUser{
+    display: flex;
+    flex-direction: column;
+}
+.fullMsgFriend .msgtime{
+    margin-left: 50px;
+}
+.fullMsgUser .msgtime{
+    margin-right: 50px;
+    text-align: end;
+}
+.chatFriendMsg, .chatUserMsg{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.Msgs{
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(240, 239, 239)
+    -1px -1px 1px rgb(240, 239, 239);
+    padding: 10px;
+}
+.chatFriendMsg img, .chatUserMsg img{
+    margin: 0 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.chatUserMsg{
+    flex-direction: row-reverse;
+    
+}
+/* -----------------------------PROFILE DETAILS------------------------------------------ */
+.profileDetails {
+    background: #eff2f6;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 25%;
+    /* width: 240px; */
+    /* margin: 16px; */
+    float: left;
+  }
+
+  .profiledetails h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+  .profiledetails label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .pro_tag{
+    text-align: left;
+    
+  }
+
+  .result{
+    text-align: right;
+  }
+  
+  #blue{
+    text-decoration: none;
+    color: rgb(63, 114, 190);
+  }
+
+  .container_profile{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(241, 241, 241);
+    box-shadow: 1px 1px 1px rgb(241, 241, 241);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    
+  }
+  .result{
+    text-align: end;
+  }
+
+  .container_pro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+  }
+
+  .container_pro img{
+    margin: 20px 10px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+}
+.b1{
+    display: flex;
+    align-items: center;
+}
+.container_pro_btn{
+   margin: 20px auto 20px auto;
+   padding: 2px 0px;
+}
+
+.container_pro_btn button{
+    border-radius: 3px;
+    word-spacing: 1px;
+} 
+
+.container_pro_btn img{
+    margin: 5px 19px 0px auto;
+    padding: auto;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.flex-space{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+.flex-space label{
+    margin: 0 10px;
+}
+

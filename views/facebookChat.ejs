@@ -1,0 +1,119 @@
+<%- include('partials/conversation_header') %>
+
+<section class="chatWindow">
+    <div class="navbar">
+        <div class="icons">
+            <i class="fa-solid fa-inbox font"></i>
+            <i class="fa-solid fa-inbox font"></i>
+            <i class="fa-solid fa-user-group font"></i>
+            <i class="fa-solid fa-chart-column font"></i>
+        </div>
+        <div class="profilePicturebottom">
+            <img src="images/profileIcon.png" alt="">
+            <div class="outerOnline"></div>
+        </div>
+    </div>
+    <div class="DM">
+        <div class="DMtitle">
+            <i class="fa-solid fa-bars"></i></i>
+            <h2>Conversations</h2>
+            <img src="images/refresh.png" alt="">
+        </div>
+        <div class="messages">
+            <div class="message">
+                <div class="messageTitle">
+                    <i class="fa-solid fa-square"></i>
+                    <div class="userNameTitle">
+                        <h3>Amit RG</h3>
+                        <p>Facebook DM</p>
+                    </div>
+                    <p class="messageTime">10m</p>
+                </div>
+                <div class="messageContent">
+                    <p class="msgContentTitle"><b>Awesome Title</b></p>
+                    <p class="msgContentpart">Lorem ipsum dolor sit amet consectetur adipi...</p>
+                </div>
+            </div>
+            <div class="message">
+                <div class="messageTitle">
+                    <i class="fa-solid fa-square"></i>
+                    <div class="userNameTitle">
+                        <h3>Hiten Saxxena</h3>
+                        <p>Facebook Post</p>
+                    </div>
+                    <p class="messageTime">10m</p>
+                </div>
+                <div class="messageContent">
+                    <p class="msgContentTitle"><b>Available in Store?</b></p>
+                    <p class="msgContentpart">Lorem ipsum dolor sit amet consectetur adipi...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chat">
+        <div class="chatTitle DMtitle">
+            <h1>Amit RG</h1>
+        </div>
+        <div class="chatMsgWindow">
+            <div class="fullMsgFriend">
+                <div class="chatFriendMsg">
+                    <img src="images/profileIcon.png" alt="">
+                    <div class="Msgs">
+                         <p>Is the stock available?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fullMsgUser">
+                <div class="chatUserMsg">
+                    <img src="images/profileIcon.png" alt="">
+                    <div class="Msgs">
+                        <p>We've 3 left in stock!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fullMsgUser">
+                <div class="chatUserMsg">
+                    <img src="images/profileIcon.png" alt="">
+                    <div class="Msgs">
+                        <p>If you order before 8PM, we can ship it today.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="profileDetails">
+        <div class="container_pro">
+            <img src="images/profileIcon.png" alt="Logo" class="profile">
+            <h2>Amit RG</h2>
+            <label>Offline</label>
+            <div class="container_pro_btn">
+            <button type="submit" class="b1"><img src="images/call.png" alt=""></button>
+            <button type="submit" class="b2"><img src="images/profileIcon.png" alt=""></button>
+        </div>
+    </div>
+        <div class="container_profile">
+        <h3>Customer details</h3>
+        <div class="flex-space">
+            <label>Email</label>  
+            <label class="result">abc@gmail.com</label>
+        </div>
+        
+        <div class="flex-space">
+        <label>First Name</label>
+        <label class="result">Amit</label></div>
+        <div class="flex-space">
+        <label>Last Name</label>
+        <label class="result">RG</label></div>
+        <div class="flex-space">
+        <label id="blue">View more details</label>
+        </div>
+        </div>
+    </div>
+</section>
+<script src="scripts/navbarSelection.js"></script>
+<script src="scripts/chatTime.js"></script>
+
+<%- include('partials/footer') %>  

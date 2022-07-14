@@ -1,0 +1,16 @@
+<%- include("partials/header") %> 
+<div class="container">
+   <form action="" method="post">
+    <h3>Facebook Page Integration</h3>
+    <h3>Integrated Page: <strong>Amazon Business</strong></h3>
+    <button type="submit" id="red_button" name="delete" value="1">Delete Integration</button>
+    <button type="submit" class="button" name="reply" value="2">Reply to Messages</button>
+   </form>
+</div>
+<script>
+   var but = document.querySelectorAll("button");
+   but.forEach(e=>{
+      e.style.marginBottom = "10px";
+   })
+</script>
+<%-include("partials/footer") %>
